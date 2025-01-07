@@ -1,0 +1,59 @@
+from fpdf import FPDF
+
+class ResumePDF(FPDF):
+    def header(self):
+        self.set_font('Arial', 'B', 16)
+        self.set_text_color(255, 255, 255)
+        self.cell(0, 10, 'Resume', align='C', ln=True)
+        self.ln(10)
+
+    def add_section(self, title, content):
+        self.set_font('Arial', 'B', 14)
+        self.set_text_color(173, 216, 230)  # Light blue for titles
+        self.cell(0, 10, title, ln=True)
+        self.ln(5)
+        self.set_font('Arial', '', 12)
+        self.set_text_color(255, 255, 255)
+        self.multi_cell(0, 10, content)
+        self.ln(5)
+
+# Create PDF
+pdf = ResumePDF()
+pdf.add_page()
+pdf.set_fill_color(0, 0, 0)  # Black background
+pdf.rect(0, 0, pdf.w, pdf.h, 'F')
+
+# Add content
+pdf.add_section("Personal information", 
+                "Ism: Mahamatqulov Baxrom\n"
+                "Tug‘ilgan sana va joy: 2005-yil 20-iyun, Farg‘ona viloyati, Beshariq tumani\n"
+                "Telefon: [Telefon raqamingizni kiriting]\n"
+                "Elektron pochta: baxrommweb@gmail.com")
+
+pdf.add_section("Education", 
+                "Toshkent Axborot Texnologiyalari Universiteti (TATU), Farg‘ona filiali\n"
+                "Fakultet: Kompyuter injiniringi va dasturiy ta’minot (KIF)\n"
+                "Guruh: 780-23\n"
+                "Boshlanish va tugash yillari: 2023-yil 1-sentabrdan hozirgacha\n\n"
+                "Najot Ta'lim\n"
+                "Kurs: Frontend dasturlash\n"
+                "Boshlanish va tugash yillari: 2024-yil 21-iyundan hozirgacha")
+
+pdf.add_section("Skills", 
+                "Frontend dasturlash:\n"
+                "- JavaScript\n"
+                "- HTML\n"
+                "- CSS\n"
+                "- Tailwind CSS\n"
+                "- ReactJS\n"
+                "- Shadcn\n"
+                "- Bootstrap")
+
+pdf.add_section("Languages", "O‘zbek tili (ona tili)")
+
+pdf.add_section("Experience", "No")
+
+# Save PDF
+file_path = "/mnt/data/Resume_Mahamatqulov_Baxrom.pdf"
+pdf.output(file_path)
+file_path

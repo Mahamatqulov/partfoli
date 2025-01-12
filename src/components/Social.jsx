@@ -75,7 +75,7 @@ export default function Social() {
               })} scale-[80%]`}
               onClick={() => {
                 window?.open(
-                  "mailto:bahrommweb@gmail.com?subject=Baxromga xat"
+                  "mailto:baxrommahamatqulov@gmail.com?subject=Baxromga xat"
                 );
               }}
             >

@@ -23,10 +23,7 @@ export default function Social() {
                 size: "icon",
               })} scale-[80%]`}
               onClick={() => {
-                window?.open(
-                  "https://www.linkedin.com/in/baxrom-mahamatqulov-802899341/",
-                  "_blank"
-                );
+                window?.open("https://www.linkedin.com/feed/", "_blank");
               }}
             >
               <LinkedInLogoIcon />
@@ -124,7 +121,7 @@ export default function Social() {
                 size: "icon",
               })} scale-[80%]`}
               onClick={() => {
-                window?.open("/Resume_Baxrom.pdf", "_blank");
+                window?.open("/Mahamatqulov_Baxrom_CV.pdf", "_blank");
               }}
             >
               <BackpackIcon />

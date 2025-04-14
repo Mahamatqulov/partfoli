@@ -121,7 +121,7 @@ export default function Social() {
                 size: "icon",
               })} scale-[80%]`}
               onClick={() => {
-                window?.open("/Baxrom_Resume.pdf", "_blank");
+                window?.open("/Baxrom-cv.pdf", "_blank");
               }}
             >
               <BackpackIcon />

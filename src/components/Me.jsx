@@ -11,11 +11,11 @@ export default function Me() {
         <div>
           <div className="flex flex-col items-center mb-5 gap-3 sm:gap-6 sm:flex-row">
             <Image
-              className="w-[100px] h-[100px] aspect-square object-cover rounded-lg sm:w-[170px] sm:h-[170px] sm:shadow-sm animate-slide-top"
+              className="w-[100px] h-[100px] aspect-square object-cover rounded-full  sm:w-[170px] sm:h-[170px] sm:shadow-sm animate-slide-top"
               src={MeImg}
               width={100}
               height={100}
-              alt=" Ulug'bek"
+              alt="Baxrom"
               priority
               unoptimized
             />

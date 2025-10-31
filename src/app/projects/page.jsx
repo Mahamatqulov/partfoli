@@ -24,7 +24,7 @@ function Loyihalar() {
       live: "#",
     },
     {
-      title: "NXG System",
+      title: "NGX System",
       description:
         "A business management system featuring Telegram-like chat, cash expense, warehouse expense, and transfer modules. Fully built front-end with React and Tailwind CSS.",
       image: "/ngx.png",

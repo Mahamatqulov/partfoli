@@ -1,42 +1,51 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 function Loyihalar() {
-  const project = [
+  const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "SmartStart",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and Stripe integration.",
-      image: "/placeholder.svg?height=200&width=300",
-      tags: ["React", "Node.js"],
-      github: "#",
+        "A Next.js-based project platform where I developed and styled the project card section using Tailwind CSS, focusing on modular and responsive UI components.",
+      image: "/smartstar.png",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/Mahamatqulov/smartstart",
       live: "#",
     },
     {
-      title: "Task Management App",
+      title: "SmartStart admin panel",
       description:
-        "A collaborative task management application with real-time updates.",
-      image: "/placeholder.svg?height=200&width=300",
-      tags: ["Next.js", "TypeScript"],
-      github: "#",
+        "A React-based admin panel for the SmartStart platform, featuring user management, project tracking, and real-time notifications.",
+      image: "/admin-panel.png",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/Mahamatqulov/smartstart-admin",
       live: "#",
     },
     {
-      title: "Weather Dashboard",
+      title: "NXG System",
       description:
-        "A responsive weather dashboard with location-based forecasts.",
-      image: "/placeholder.svg?height=200&width=300",
-      tags: ["React", "API Integration"],
-      github: "#",
+        "A business management system featuring Telegram-like chat, cash expense, warehouse expense, and transfer modules. Fully built front-end with React and Tailwind CSS.",
+      image: "/ngx.png",
+      tags: ["React", "Tailwind CSS", "Redux Toolkit"],
+      github: "https://github.com/Mahamatqulov/ngx-system",
+      live: "#",
+    },
+    {
+      title: "Support-Chat",
+      description:
+        "A chat management system with complete Admin and Super Admin panels, CRUD functionalities, and real-time message handling. Developed using React and Tailwind CSS.",
+      image: "/support.png",
+      tags: ["React", "Tailwind CSS"],
+      github: "https://github.com/Mahamatqulov/support-chat",
       live: "#",
     },
   ];
+
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-14 animate-slide-top deyal-600">
-      {project.map((project, index) => (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-14 animate-slide-top delay-600">
+      {projects.map((project, index) => (
         <Card
           key={index}
           className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700"
@@ -56,14 +65,14 @@ function Loyihalar() {
                 <GitHubLogoIcon className="h-4 w-4 mr-2" />
                 Code
               </Button>
-              <Button
+              {/* <Button
                 size="sm"
                 variant="secondary"
                 className="bg-white/90 text-gray-900 hover:bg-white"
               >
                 <ExternalLink className="h-4 w-4 mr-2" />
                 Live
-              </Button>
+              </Button> */}
             </div>
           </div>
           <CardContent className="p-6">

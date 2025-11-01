@@ -44,20 +44,20 @@ export default function page() {
         <p className="animate-slide-top delay-900 mb-1">
           Dasturlash hayotimda 10+ loyihalar qilganman. Ulardan{" "}
           <span className="underline">real</span> hisoblangani hamda hozir ham
-          insonlarga manfaat beradiganlari 1+ hisoblanadi. Batafsil{" "}
+          insonlarga manfaat beradiganlari 5+ hisoblanadi. Batafsil{" "}
           <Link className="underline" href="/projects">
             loyihalar
           </Link>{" "}
           bo'limida tanishishingiz mumkin.
         </p>
-        <p className="animate-slide-top delay-1200">
+        {/* <p className="animate-slide-top delay-1200">
           Hozirda{" "}
           <a className="underline" href="https://najottalim.uz" target="_blank">
             Najot Ta'lim
           </a>{" "}
           da frontend kursida o'qiyman. Menda hozircha shular, endi o'zingizdan
           so'rasak :D
-        </p>
+        </p> */}
       </div>
 
       <div className="px-10 animate-slide-top delay-700">
